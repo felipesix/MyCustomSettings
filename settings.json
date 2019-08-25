@@ -123,7 +123,7 @@
                 }                    
             },
             
-            {   //Rule hashtable begin color
+            {   //Rule array begin color
                 "scope": "keyword.other.array.begin.powershell",            
                 "settings": {            
                     "foreground": "#cfc06b",                    
