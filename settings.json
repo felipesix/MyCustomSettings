@@ -14,7 +14,6 @@ Extension: Guides (For custom indentation highlighting)
 
  */ 
 
-
 {
     "window.zoomLevel": 0,
     "git.autofetch": true,
