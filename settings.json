@@ -2,15 +2,16 @@
 
 How to use it: 
 
-1. Copy all content in this file (Ctrl + A > Ctrl + C)
+1. Copy all content in this file (Ctrl + A > Ctrl + C).
 1. In VSCode, open the command pallete (Ctrl + Shift + P).
 2. Type "JSON" and select the option "Preferences: Open Settings (JSON).
 3. Replace it all with this code.
 
-Recommended for using with: 
+Recommended for using with:
 
-Theme: Arc Dark (found in the extension "Linux Themes for VSCode")
-Extension: Guides (For custom indentation highlighting)
+Language syntax: Powershell.
+Theme: Arc Dark (found in the extension "Linux Themes for VSCode").
+Extension: Guides (For custom indentation highlighting).
 (Optional)Extension: Material Icon Theme - If you're not going to use it, delete lines 23,24 and 25.
 
  */ 
