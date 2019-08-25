@@ -16,7 +16,30 @@
     "guides.active.color.dark": "rgba(0, 150, 0, 1)",
     "guides.stack.color.dark": "rgba(0, 150, 0, 0.2)",
     "guides.normal.color.dark": "rgba(150, 150, 150, 0.2)",               
-    "workbench.colorCustomizations": {"[Arc Dark]": {"editor.background": "#1d1a1a"}},
+    
+    "workbench.colorCustomizations": {
+        "[Arc Dark]": {
+            
+            // Backgrounds
+            "editor.background": "#1d1a1a",
+            "terminal.background": "#131212",
+            "activityBar.background": "#1c1c1f",
+            
+            // Borders
+            "activityBar.border": "#000000",
+            "contrastBorder": "#000000",
+            "sideBar.border": "#000000",
+            "titleBar.border": "#000000",
+            "statusBar.background": "#1c1c1f",            
+            
+            // Badge
+            "badge.background": "#2491da",
+                        
+            // Foregrounds
+            "activityBar.inactiveForeground": "#5f5c5c",
+            "activityBar.foreground": "#01c4ff"
+        }
+    },
     
     "editor.tokenColorCustomizations": {
         
@@ -123,7 +146,7 @@
                 }                    
             },
             
-            {   //Rule array begin color
+            {   //Rule hashtable begin color
                 "scope": "keyword.other.array.begin.powershell",            
                 "settings": {            
                     "foreground": "#cfc06b",                    
