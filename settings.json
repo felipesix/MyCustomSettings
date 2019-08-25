@@ -1,0 +1,143 @@
+/* 
+
+How to use it: 
+
+1. Copy all content in this file (Ctrl + A > Ctrl + C)
+1. In VSCode, open the command pallete (Ctrl + Shift + P).
+2. Type "JSON" and select the option "Preferences: Open Settings (JSON).
+3. Replace it all with this code.
+
+Recommended for using with: 
+
+Theme: Arc Dark (found in the extension "Linux Themes for VSCode")
+Extension: Guides (For custom indentation highlighting)
+
+ */ 
+
+
+{
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "workbench.colorTheme": "Arc Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.folders.color": "#7cb342",
+    "editor.fontFamily": "Consolas",
+    "terminal.integrated.fontFamily": "consolas",
+    "editor.renderIndentGuides": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": true,
+    "guides.overrideDefault": true,
+    "guides.active.color.dark": "rgba(0, 150, 0, 1)",
+    "guides.stack.color.dark": "rgba(0, 200, 0, 0.2)",
+    "guides.normal.color.dark": "rgba(200, 200, 200, 0.2)",               
+    "workbench.colorCustomizations": {"[Arc Dark]": {"editor.background": "#1d1a1a"}},
+    
+    "editor.tokenColorCustomizations": {
+        
+        "comments": "#ffffff38",
+
+        "textMateRules": [
+            
+            {   //Rule Ponctuation color
+                "scope": "punctuation.definition.variable.powershell",            
+                "settings": {            
+                    "foreground": "#c29450",                    
+                }                    
+            },
+            
+            {   //Rule variable color
+                "scope": "variable",            
+                "settings": {            
+                    "foreground": "#c29450",                                                           
+                }
+            },
+
+            {   //Rule automatic (pipeline) variable color
+                "scope": "support.variable.automatic.powershell",            
+                "settings": {            
+                    "foreground": "#c29450",                    
+                }                    
+            },
+
+            {   //Rule single quote String color
+                "scope": "string.quoted.single.powershell",            
+                "settings": {            
+                    "foreground": "#8f9d6a",                                        
+                }
+            },
+
+            {   //Rule double quote String color
+                "scope": "string.quoted.double.powershell",            
+                "settings": {            
+                    "foreground": "#8f9d6a",                                        
+                }
+            },
+                        
+            {   //Rule property color
+                "scope": "variable.other.member.powershell",            
+                "settings": {            
+                    "foreground": "#ffffffa6",                                        
+                }
+            },
+            
+            {   //Rule keyword color
+                "scope": "keyword.control.powershell",            
+                "settings": {            
+                    "foreground": "#88c6da",                                                                             
+                }
+            },                        
+                        
+            {   //Rule comparison operator color
+                "scope": "keyword.operator.comparison.powershell",            
+                "settings": {            
+                    "foreground": "#ffffff7a",
+                    "fontStyle": "italic"                                                           
+                }
+            },
+            
+            {   //Rule function name color
+                "scope": "entity.name.function.powershell",            
+                "settings": {            
+                    "foreground": "#89acdd",                                                           
+                }
+            },
+
+            {   //Rule type color
+                "scope": "storage.type.powershell",            
+                "settings": {            
+                    "foreground": "#67c48e",                    
+                }                    
+            },
+
+            {   //Rule function attributes color
+                "scope": "support.function.attribute.powershell",            
+                "settings": {            
+                    //"foreground": "#549abb",                    
+                }                    
+            },
+
+            {   //Rule variable attributes color
+                "scope": "variable.parameter.attribute.powershell",            
+                "settings": {            
+                    "foreground": "#ffffffb0",                    
+                }                    
+            },
+            
+            {   //Rule cmdlet color
+                "scope": "support.function.powershell",            
+                "settings": {            
+                    "foreground": "#8a96cc",                    
+                }                    
+            },
+
+            {   //Rule hashtable begin color
+                "scope": "keyword.other.hashtable.begin.powershell",            
+                "settings": {            
+                    "foreground": "#e9803a",                    
+                }                    
+            }
+        ]             
+    } 
+}
