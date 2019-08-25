@@ -11,6 +11,7 @@ Recommended for using with:
 
 Theme: Arc Dark (found in the extension "Linux Themes for VSCode")
 Extension: Guides (For custom indentation highlighting)
+(Optional)Extension: Material Icon Theme - If you're not going to use it, delete lines 23,24 and 25.
 
  */ 
 
