@@ -22,12 +22,12 @@ Guides: For custom indentation highlighting - Line 42
 {   
     // Delete it if you're not going to use it with Arc Dark theme.
     "workbench.colorTheme": "Arc Dark",
-    
+
     // Kept from default
     "window.zoomLevel": 0,
     "git.autofetch": true,
     
-    // Edited from default 
+    // Edited from default
     "editor.fontFamily": "Consolas",
     "terminal.integrated.fontFamily": "Consolas",
     "window.menuBarVisibility": "toggle",
@@ -52,9 +52,11 @@ Guides: For custom indentation highlighting - Line 42
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.copyOnSelection": true,
+    "powershell.integratedConsole.focusConsoleOnExecute": true,
     "terminal.integrated.cursorStyle": "underline",       
     "terminal.integrated.rightClickBehavior": "copyPaste",    
-    
+    "terminal.integrated.commandsToSkipShell":["workbench.action.toggleSidebarVisibility"],    
+
     "workbench.colorCustomizations": {
         "[Arc Dark]": {
             
