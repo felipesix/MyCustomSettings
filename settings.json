@@ -23,11 +23,11 @@ Guides: For custom indentation highlighting - Line 42
     // Delete it if you're not going to use it with Arc Dark theme.
     "workbench.colorTheme": "Arc Dark",
     
-    // From default
+    // Kept from default
     "window.zoomLevel": 0,
     "git.autofetch": true,
     
-    // Edited 
+    // Edited from default 
     "editor.fontFamily": "Consolas",
     "terminal.integrated.fontFamily": "Consolas",
     "window.menuBarVisibility": "toggle",
