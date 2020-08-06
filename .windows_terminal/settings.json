@@ -22,7 +22,7 @@
         {
             // Put settings here that you want to apply to all profiles.
             "useAcrylic" : true,
-            "acrylicOpacity" : 0.8,
+            "acrylicOpacity" : 0,
             "padding" : "0, 0, 0, 0",
             "fontFace" : "Cascadia Mono",
             "fontSize" : 12,
@@ -37,6 +37,8 @@
                 // Windows Powershell
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "PowerShell",
+                "backgroundImageOpacity": 0.2,
+                "backgroundImage": "c:/users/felip/.windows_terminal/background/dedsec_3.jpg",
                 "commandline": "powershell.exe",
                 "hidden": false,
                 "cursorColor" : "#188CFF"
@@ -131,7 +133,7 @@
             "background" : "#282A36",
             "black" : "#21222C",
             "blue" : "#BD93F9",
-            "brightBlack" : "#3d69a3",
+            "brightBlack" : "#2beb2b",
             "brightBlue" : "#D6ACFF",
             "brightCyan" : "#A4FFFF",
             "brightGreen" : "#69FF94",
@@ -164,6 +166,7 @@
         { "command": "openTabColorPicker", "keys": "ctrl+b" },
         { "command": "renameTab", "keys": "ctrl+c" },
         { "command": "toggleRetroEffect", "keys": "ctrl+d" },
+        { "command": "commandPalette", "keys": "ctrl+shift+p" },
 
         // Press Ctrl+Shift+F to open the search box
         { "command": "find", "keys": "ctrl+shift+f" },
