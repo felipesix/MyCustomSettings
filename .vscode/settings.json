@@ -1,6 +1,6 @@
-/* 
+/*
 
-How to use it: 
+How to use it:
 
 1. Copy all content in this file (Ctrl + A > Ctrl + C).
 1. In VSCode, open the command pallete (Ctrl + Shift + P).
@@ -17,34 +17,35 @@ Optional Extensions:
 Material Icon Theme - For custom icons - Line 37
 Guides: For custom indentation highlighting - Line 42
 
-*/ 
+*/
 
-{   
+{
     // Delete it if you're not going to use it with Arc Dark theme.
     "workbench.colorTheme": "Arc Dark",
 
     // Kept from default
     "window.zoomLevel": 0,
     "git.autofetch": true,
-    
+
     // Edited from default
     "editor.fontFamily": "Consolas",
+    "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "Consolas",
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "default",
     "editor.minimap.enabled": true,
     "workbench.statusBar.visible": true,
-    
+
     // Material icon theme.
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.folders.color": "#7cb342",
-    
+
     // Guides extension (Delete if you're not going to use Guides)
     "guides.overrideDefault": true,
     "guides.active.color.dark": "rgba(0, 150, 0, 1)",
-    "guides.stack.color.dark": "rgba(0, 150, 0, 0.2)",
-    "guides.normal.color.dark": "rgba(150, 150, 150, 0.2)",
-    
+    "guides.stack.color.dark": "rgba(0, 150, 0, 0.3)",
+    "guides.normal.color.dark": "rgba(150, 150, 150, 0.3)",
+
     // Set it to true (or delete it) if you're not going to use Guides extension
     "editor.renderIndentGuides": false,
 
@@ -53,146 +54,154 @@ Guides: For custom indentation highlighting - Line 42
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.copyOnSelection": true,
     "powershell.integratedConsole.focusConsoleOnExecute": true,
-    "terminal.integrated.cursorStyle": "underline",       
-    "terminal.integrated.rightClickBehavior": "copyPaste",    
-    "terminal.integrated.commandsToSkipShell":["workbench.action.toggleSidebarVisibility"],    
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.rightClickBehavior": "copyPaste",
+    "terminal.integrated.commandsToSkipShell":["workbench.action.toggleSidebarVisibility"],
 
     "workbench.colorCustomizations": {
         "[Arc Dark]": {
-            
+
             // Backgrounds
             "editor.background": "#1d1a1a",
             "terminal.background": "#131212",
             "activityBar.background": "#1c1c1f",
             "terminal.foreground": "#d1dad1",
-            
+            "activityBar.activeBackground":"#2c9ce76e",
+
             // Borders
             "activityBar.border": "#000000",
             "contrastBorder": "#000000",
             "sideBar.border": "#000000",
             "titleBar.border": "#000000",
-            "statusBar.background": "#1c1c1f",            
-            
+            "statusBar.background": "#1c1c1f",
+
             // Badge
             "badge.background": "#2491da",
-                        
+
             // Foregrounds
             "activityBar.inactiveForeground": "#5f5c5c",
             "activityBar.foreground": "#01c4ff"
         }
     },
-    
+
     "editor.tokenColorCustomizations": {
-        
+
         "comments": "#fcfcfc5d",
 
         "textMateRules": [
-            
+
             {   //Rule Ponctuation color
-                "scope": "punctuation.definition.variable.powershell",            
-                "settings": {            
-                    "foreground": "#c29450",                    
-                }                    
+                "scope": "punctuation.definition.variable.powershell",
+                "settings": {
+                    "foreground": "#c29450",
+                }
             },
-            
+
             {   //Rule variable color
-                "scope": "variable",            
-                "settings": {            
-                    "foreground": "#c29450",                                                           
+                "scope": "variable",
+                "settings": {
+                    "foreground": "#c29450",
                 }
             },
 
             {   //Rule automatic (pipeline) variable color
-                "scope": "support.variable.automatic.powershell",            
-                "settings": {            
-                    "foreground": "#c29450",                    
-                }                    
+                "scope": "support.variable.automatic.powershell",
+                "settings": {
+                    "foreground": "#c29450",
+                }
             },
 
             {   //Rule single quote String color
-                "scope": "string.quoted.single.powershell",            
-                "settings": {            
-                    "foreground": "#8f9d6a",                                        
+                "scope": "string.quoted.single.powershell",
+                "settings": {
+                    "foreground": "#8f9d6a",
                 }
             },
 
             {   //Rule double quote String color
-                "scope": "string.quoted.double.powershell",            
-                "settings": {            
-                    "foreground": "#8f9d6a",                                        
+                "scope": "string.quoted.double.powershell",
+                "settings": {
+                    "foreground": "#8f9d6a",
                 }
             },
-                        
+
             {   //Rule property color
-                "scope": "variable.other.member.powershell",            
-                "settings": {            
-                    "foreground": "#ffffffa6",                                        
+                "scope": "variable.other.member.powershell",
+                "settings": {
+                    "foreground": "#ffffffa6",
                 }
             },
-            
+
             {   //Rule keyword color
-                "scope": "keyword.control.powershell",            
-                "settings": {            
-                    "foreground": "#88c6da",                                                                             
-                }
-            },                        
-                        
-            {   //Rule comparison operator color
-                "scope": "keyword.operator.comparison.powershell",            
-                "settings": {            
-                    "foreground": "#ffffff7a",
-                    "fontStyle": "italic"                                                           
+                "scope": "keyword.control.powershell",
+                "settings": {
+                    "foreground": "#88c6da",
                 }
             },
-            
+
+            {   //Rule comparison operator color
+                "scope": "keyword.operator.comparison.powershell",
+                "settings": {
+                    "foreground": "#ffffff7a",
+                    "fontStyle": "italic"
+                }
+            },
+
             {   //Rule function name color
-                "scope": "entity.name.function.powershell",            
-                "settings": {            
-                    "foreground": "#89acdd",                                                           
+                "scope": "entity.name.function.powershell",
+                "settings": {
+                    "foreground": "#89acdd",
                 }
             },
 
             {   //Rule type color
-                "scope": "storage.type.powershell",            
-                "settings": {            
-                    "foreground": "#67c48e",                    
-                }                    
+                "scope": "storage.type.powershell",
+                "settings": {
+                    "foreground": "#67c48e",
+                }
             },
 
             {   //Rule function attributes color
-                "scope": "support.function.attribute.powershell",            
-                "settings": {            
-                    //"foreground": "#549abb",                    
-                }                    
+                "scope": "support.function.attribute.powershell",
+                "settings": {
+                    //"foreground": "#549abb",
+                }
             },
 
             {   //Rule variable attributes color
-                "scope": "variable.parameter.attribute.powershell",            
-                "settings": {            
-                    "foreground": "#ffffffb0",                    
-                }                    
+                "scope": "variable.parameter.attribute.powershell",
+                "settings": {
+                    "foreground": "#ffffffb0",
+                }
             },
-            
+
             {   //Rule cmdlet color
-                "scope": "support.function.powershell",            
-                "settings": {            
-                    "foreground": "#8a96cc",                    
-                }                    
+                "scope": "support.function.powershell",
+                "settings": {
+                    "foreground": "#8a96cc",
+                }
             },
 
             {   //Rule hashtable begin color
-                "scope": "keyword.other.hashtable.begin.powershell",            
-                "settings": {            
-                    "foreground": "#e9803a",                    
-                }                    
+                "scope": "keyword.other.hashtable.begin.powershell",
+                "settings": {
+                    "foreground": "#e9803a",
+                }
             },
-            
+
             {   //Rule hashtable begin color
-                "scope": "keyword.other.array.begin.powershell",            
-                "settings": {            
-                    "foreground": "#cfc06b",                    
-                }                    
+                "scope": "keyword.other.array.begin.powershell",
+                "settings": {
+                    "foreground": "#cfc06b",
+                }
             }
-        ]             
-    } 
+        ]
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.detectIndentation": false,
+    "scm.providerCountBadge": "visible",
+    "git.showCommitInput": false,
+    "workbench.sideBar.location": "left",
+    "files.trimTrailingWhitespace": true,
+    "explorer.confirmDelete": false
 }
